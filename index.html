@@ -1,67 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap JS (optional for dropdowns, toggles, etc.) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between d-flex px-5" >
-        <div class="container-fluid " >
-          <a class="navbar-brand" href="#">
-            <img src="https://marketplace.canva.com/EAFaFUz4aKo/2/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-JmYWTjUsE-Q.jpg" alt="" height="100" width="200">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JS (optional for dropdowns, toggles, etc.) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-black text-white">
+    <header
+      class="flex justify-between items-center px-5 md:px-10 lg:px-16 py-2"
+    >
+      <div>
+        <img
+          src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp"
+          alt=""
+          height="60px"
+          width="180px"
+        />
+      </div>
+
+      <div class="hidden md:block list-none">
+        <ul
+          class="flex justify-center items-center gap-x-5 text-base md:text-lg pl-3"
+        >
+          <li class="hover:text-gray-500">Home</li>
+          <li class="hover:text-gray-500">Services</li>
+          <li class="hover:text-gray-500">Contact</li>
+          <li class="hover:text-gray-500">About</li>
+        </ul>
+      </div>
+      <div class="flex md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-align-justify"
+        >
+          <path d="M3 12h18" />
+          <path d="M3 18h18" />
+          <path d="M3 6h18" />
+        </svg>
+      </div>
+    </header>
+
+    <!-- hero-section -->
+
+    <section class="mt-20 flex justify-center">
+      <div class="hero-bg"></div>
+    </section>
+    <div class="flex justify-center mt-4">
+      <button class="btn-grad" style="font-size: 15px">Get Started</button>
+      <br />
+      <button class="btn-grad" style="font-size: 15px">Shop Now</button>
+    </div>
+
+    <!-- services  -->
+
+    <div class="text-center mt-36">
+      <span class="text-4xl"
+        >Welcome to
+        <span id="font" class="text-5xl text-gray-300"> Salt'n Pepper </span>
+        <br />
+        Restaurants! Our Brands</span
+      >
+    </div>
+
+    <section
+      class="flex justify-evenly my-16 items-center flex-wrap mt-9 px-10"
+    >
+      <div class="bg-white w-80 h-32 mt-36">
+        <div class="flex justify-center">
+          <img
+            src="https://static.tossdown.com/site/8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp"
+            alt=""
+          />
         </div>
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">resume</a>
-              </li>
-            </ul>
-          
+        <div class="relative top-14 left-18">
+          <span class="order text-white px-10 py-2"> Order now</span>
         </div>
-      </nav>
-      <br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 id="about">About</h1>
-</body>
+      </div>
+
+      <div class="bg-white w-80 h-36 mt-36">
+        <div class="flex justify-center items-center">
+          <img
+            class="mt-3"
+            src="https://static.tossdown.com/site/9d9cb355-ac8c-404e-a608-c28242343cd1.webp"
+            alt=""
+          />
+        </div>
+        <div class="relative top-14 left-18">
+          <span class="order text-white px-10 py-2"> Order now</span>
+        </div>
+      </div>
+
+      <div class="bg-white w-80 h-36 mt-36">
+        <div class="flex justify-center items-center">
+          <img
+            class="mt-3"
+            src="https://static.tossdown.com/site/f9238d0e-7c34-4139-a081-c57b7713628e.webp"
+            alt=""
+          />
+        </div>
+        <div class="relative top-14 left-20">
+          <span class="order text-white px-10 py-2"> Order now</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section>
+      <div class="mt-36 flex justify-center">
+        <span class="head text-4xl font-serif">Contact Us</span>
+      </div>
+
+      <div class="form-container">
+        <div class="form-card">
+          <form class="form" action="">
+            <legend>Name</legend>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder=" Write your Name"
+            />
+          </form>
+          <form class="form" action="">
+            <legend>E-mail</legend>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder=" Write your Email"
+            />
+          </form>
+          <form class="form" action="">
+            <legend>Message</legend>
+            <textarea
+              rows="5"
+              cols="40"
+              name="msg"
+              id="msg"
+              maxlength="{200}"
+              placeholder=" Write your Messsage"
+              required
+            ></textarea>
+          </form>
+          <form style="display: flex; justify-content: center" action="">
+            <input class="form-button buttons" type="submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="text-center items-center">
+      <span class="text-lg">
+        <i class="fa-solid fa-envelope fa-xl" style="color: #e40c0c"> </i>
+        abc@gmail.com</span
+      ><br /><br />
+      <span class="text-lg">
+        <i class="fa-solid fa-address-book fa-xl" style="color: #e40c0c"></i>
+        house No.69 Karachi , Pakistan</span
+      >
+      <br /><br />
+      <span class="text-lg">
+        <i class="fa-solid fa-phone fa-xl" style="color: #f51414"></i
+        >797078601</span
+      >
+    </div>
+
+    <footer class="bg mt-48 pb-4 flex justify-center gap-x-5 items-center">
+      <div class="mt-4 hover:text-gray-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram"
+        >
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
+      </div>
+      <div class="mt-4 hover:text-gray-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-github"
+        >
+          <path
+            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+          />
+          <path d="M9 18c-4.51 2-5-2-7-2" />
+        </svg>
+      </div>
+      <div class="mt-4 hover:text-gray-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook"
+        >
+          <path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          />
+        </svg>
+      </div>
+    </footer>
+    <div class="flex justify-center text-xl py-3">
+      <p>&copy; 2024 Company Rivo. All rights reserved.</p>
+    </div>
+  </body>
 </html>
-
-<!-- git init  -->
-<!-- Initialize a new Git repository -->
-<!-- git init -->
-
-<!-- Add all files to the staging area -->
-<!-- git add . -->
-
-<!-- Commit the changes with a message -->
-<!-- git commit -m "Initial commit" -->
-
-<!-- Add the remote repository URL -->
-<!-- git remote add origin https://github.com/Tanzeel-Azeem/Hackathon-SMIT.git -->
-
-<!-- Push the changes to the remote repository -->
-<!-- git push -u origin main -->
